@@ -26,7 +26,7 @@ const InfoGen = (() => {
         children: [
             {
                 tag: 'div',
-                classes: ['tab'],
+                classes: ['tab-selected'],
                 content: `Info`,
             },
             {
@@ -49,19 +49,13 @@ const InfoGen = (() => {
                     },
                     {
                         tag: `p`,
-                        content: `Clams n' Cabbage was established in 1337 
-                        and is the oldest running dual-food specialist in 
-                        the Northern Hemisphere. We are a family run operation,
-                        with our super secret special and infamous clam and
-                        cabbage recipes having been passed down the generations.
-                        Come and enjoy our authentic seabed-to-seedbed cuisine
-                        in a relaxed, friendly atmosphere!`
+                        content: `Clams n' Cabbage was established in 1337 and is the oldest running dual-food specialist in the Northern Hemisphere. We are a family run operation,with our super secret special and infamous clam and cabbage recipes having been passed down the generations. Come and enjoy our authentic seabed-to-seedbed cuisine in a relaxed, friendly atmosphere!`
                     },
                 ]
             },
         ]
     }
-    let gen = domElement(headerTemplate)
+    let gen = domElement(infoTemplate)
     content.append(gen)
 
 })();
