@@ -1,49 +1,68 @@
 const InfoGen = (() => {
 
     const content = document.querySelector(".content")
-          
+
     const domElement = obj => {
-        
+
         let domEl = document.createElement(obj.tag)
-        
+
         if (obj.content) domEl.innerText = obj.content
-        
+
         if (obj.classes) for (let cssClass of obj.classes) {
             domEl.classList.add(cssClass)
-          
-        }
-        if (obj.tag == "img") {
-            domEl.src = "logo";
-        }
+
+        }        
         if (obj.children) for (let child of obj.children) {
             domElement(child)
-            domEl.append(domElement(child))                     
+            domEl.append(domElement(child))
         }
         return domEl
-    }   
+    }
 
-    const headerTemplate = {
+    const infoTemplate = {
 
         tag: 'div',
-        classes: ['header'],
+        classes: ['main'],
         children: [
             {
-                tag: 'img',
-                src: 'logo',
-                classes: ['logo'],
+                tag: 'div',
+                classes: ['tab'],
+                content: `Info`,
             },
             {
-                tag: 'h1',
-                content: `Clams n' Cabbage`,
+                tag: 'div',
+                classes: ['tab'],
+                content: `Menu`,
             },
             {
-                tag: 'h2',
-                content: `the finest clams n cabbage the world did ever taste!`,
-            }
+                tag: 'div',
+                classes: ['tab'],
+                content: `Contact`,
+            },
+            {
+                tag: 'div',
+                classes: ['tab-content'],
+                children: [
+                    {
+                        tag: `h3`,
+                        content: `About Clams n' Cabbage`
+                    },
+                    {
+                        tag: `p`,
+                        content: `Clams n' Cabbage was established in 1337 
+                        and is the oldest running dual-food specialist in 
+                        the Northern Hemisphere. We are a family run operation,
+                        with our super secret special and infamous clam and
+                        cabbage recipes having been passed down the generations.
+                        Come and enjoy our authentic seabed-to-seedbed cuisine
+                        in a relaxed, friendly atmosphere!`
+                    },
+                ]
+            },
         ]
     }
     let gen = domElement(headerTemplate)
-    content.prepend(gen)
+    content.append(gen)
 
 })();
 

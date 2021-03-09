@@ -17,8 +17,14 @@ img {
 .main {
     background-color: #ffffff;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.tab {
+    margin: 5px;
 }
 
 h1, h2 {
