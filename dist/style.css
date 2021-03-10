@@ -28,16 +28,11 @@ img {
     flex: 1;
 }
 
-.tab-selected {
+.tab-selected, .tab:hover {
     margin: 5px;
     flex: 1;
     background-color: #4e453e;
-}
-
-.tab:hover {
-    margin: 5px;
-    flex: 1;
-    background-color: #fff2e8
+    color: #fff2e8
 }
 
 h1, h2 {
@@ -46,4 +41,8 @@ h1, h2 {
 
 h3, p {
     text-align: left;
+}
+
+input {
+    margin: 10px;
 }
