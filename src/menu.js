@@ -31,57 +31,67 @@ const MenuGen = () => {
                 content: `Our Award-Winning Menu`
             },
             {
-                tag: `figure`,
+                tag: `div`,
+                classes: ['menu-container'],
                 children: [
                     {
-                        tag: 'img',
-                        src: "menu-clams.jpeg"
+                        tag: `figure`,
+                        children: [
+                            {
+                                tag: 'img',
+                                classes: [`menu-image`],
+                                src: "menu-clams.jpeg"
+                            },
+                            {
+                                tag: 'figcaption',
+                                content: "Clams",
+                            }
+                        ]
                     },
                     {
-                        tag: 'figcaption',
-                        content: "Clams",
-                    }
-                ]
-            },
-            {
-                tag: `figure`,
-                children: [
-                    {
-                        tag: 'img',
-                        src: "menu-cabbage.jpg"
+                        tag: `figure`,
+                        children: [
+                            {
+                                tag: 'img',
+                                classes: [`menu-image`],
+                                src: "menu-cabbage.jpg"
+                            },
+                            {
+                                tag: 'figcaption',
+                                content: "Cabbage",
+                            }
+                        ]
                     },
                     {
-                        tag: 'figcaption',
-                        content: "Cabbage",
-                    }
-                ]
-            },
-            {
-                tag: `figure`,
-                children: [
-                    {
-                        tag: 'img',
-                        src: "menu-clamsncabbage.jpg"
+                        tag: `figure`,
+                        children: [
+                            {
+                                tag: 'img',
+                                classes: [`menu-image`],
+                                src: "menu-clamsncabbage.jpg"
+                            },
+                            {
+                                tag: 'figcaption',
+                                content: "Clams with Cabbage",
+                            }
+                        ]
                     },
                     {
-                        tag: 'figcaption',
-                        content: "Clams with Cabbage",
-                    }
-                ]
-            },
-            {
-                tag: `figure`,
-                children: [
-                    {
-                        tag: 'img',
-                        src: "menu-cabbagenclams.jpg"
+                        tag: `figure`,
+                        children: [
+                            {
+                                tag: 'img',
+                                classes: [`menu-image`],
+                                src: "menu-cabbagenclams.jpg"
+                            },
+                            {
+                                tag: 'figcaption',
+                                content: "Cabbage with Clams",
+                            }
+                        ]
                     },
-                    {
-                        tag: 'figcaption',
-                        content: "Cabbage with Clams",
-                    }
                 ]
-            },
+            }
         ]
     }
 
