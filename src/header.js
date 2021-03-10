@@ -29,12 +29,12 @@ const HeaderGen = () => {
         children: [
             {
                 tag: 'img',
-                src: 'logo',
+                src: '/src/logo.png',
                 classes: ['logo'],
             },
             {
                 tag: 'img',
-                src: 'cabbage-logo.png',
+                src: '/src/cabbage-logo.png',
                 classes: ['logo'],
             },
             {
