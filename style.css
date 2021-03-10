@@ -2,8 +2,13 @@
     background-color: #fff2e8;
 }
 
+img.logo {
+    width: 100px;
+    height: auto;
+}
+
 img {
-    max-width: 10%;
+    max-width: 25%;
     height: auto;
 }
 
@@ -41,6 +46,7 @@ h1, h2 {
 
 h3, p {
     text-align: left;
+    padding: 15px;
 }
 
 input {
