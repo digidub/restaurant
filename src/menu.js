@@ -27,6 +27,10 @@ const MenuGen = () => {
         classes: ['tab-content', 'tab-menu'],
         children: [
             {
+                tag: `h3`,
+                content: `Our Award-Winning Menu`
+            },
+            {
                 tag: `figure`,
                 children: [
                     {

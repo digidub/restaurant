@@ -26,17 +26,17 @@ const TabGen = () => {
         children: [
             {
                 tag: 'div',
-                classes: ['tab', 'tab-selected'],
+                classes: ['tab', 'tab-info', 'tab-selected'],
                 content: `Info`,
             },
             {
                 tag: 'div',
-                classes: ['tab'],
+                classes: ['tab', 'tab-menu'],
                 content: `Menu`,
             },
             {
                 tag: 'div',
-                classes: ['tab'],
+                classes: ['tab', 'tab-contact'],
                 content: `Contact`,
             },
         ]
