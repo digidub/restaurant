@@ -25,61 +25,67 @@ const ContactGen = () => {
 
     const contactTemplate = {
 
-        tag: 'form',
+        tag: 'div',
+        classes: ['tab-content', 'tab-contact'],
         children: [
             {
-                tag: `div`,
+                tag: 'form',
                 children: [
                     {
-                        tag: 'label',
-                        for: 'name',
-                        content: 'Name:',
+                        tag: `div`,
+                        children: [
+                            {
+                                tag: 'label',
+                                for: 'name',
+                                content: 'Name:',
+                            },
+                            {
+                                tag: 'input',
+                                type: 'text',
+                                name: 'name',
+                                required: 'required',
+                            }
+                        ]
                     },
                     {
-                        tag: 'input',
-                        type: 'text',
-                        name: 'name',
-                        required: 'required',
-                    }
-                ]
-            },
-            {
-                tag: `div`,
-                children: [
-                    {
-                        tag: 'label',
-                        for: 'email',
-                        content: 'Email:',
+                        tag: `div`,
+                        children: [
+                            {
+                                tag: 'label',
+                                for: 'email',
+                                content: 'Email:',
+                            },
+                            {
+                                tag: 'input',
+                                type: 'email',
+                                name: 'email',
+                                required: 'required',
+                            }
+                        ]
                     },
                     {
-                        tag: 'input',
-                        type: 'email',
-                        name: 'email',
-                        required: 'required',
-                    }
-                ]
-            },
-            {
-                tag: `div`,
-                children: [
-                    {
-                        tag: 'label',
-                        for: 'message',
-                        content: 'Please type your message here:',
+                        tag: `div`,
+                        children: [
+                            {
+                                tag: 'label',
+                                for: 'message',
+                                content: 'Please type your message here:',
+                            },
+                            {
+                                tag: 'input',
+                                type: 'text',
+                                name: 'message',
+                                required: 'required',
+                            }
+                        ]
                     },
                     {
-                        tag: 'input',
-                        type: 'text',
-                        name: 'message',
-                        required: 'required',
-                    }
+                        tag: `input`,
+                        type: 'submit',
+                        value: 'submit',
+                    },
                 ]
-            },
-            {
-                tag: `input`,
-                type: 'submit',
-                value: 'submit',                
-            },
+            }
         ]
     }
 
