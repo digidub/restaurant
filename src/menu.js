@@ -1,4 +1,4 @@
-const MenuGen = (() => {
+const MenuGen = () => {
 
     const content = document.querySelector(".main")
 
@@ -10,7 +10,9 @@ const MenuGen = (() => {
 
         if (obj.classes) for (let cssClass of obj.classes) {
             domEl.classList.add(cssClass)
-
+        }
+        if (obj.tag == "img") {
+            domEl.src = obj.src;
         }
         if (obj.children) for (let child of obj.children) {
             domElement(child)
@@ -42,7 +44,7 @@ const MenuGen = (() => {
                 children: [
                     {
                         tag: 'img',
-                        src: "menu-cabbage.jpeg"
+                        src: "menu-cabbage.jpg"
                     },
                     {
                         tag: 'figcaption',
@@ -55,7 +57,7 @@ const MenuGen = (() => {
                 children: [
                     {
                         tag: 'img',
-                        src: "menu-clamsncabbage.jpeg"
+                        src: "menu-clamsncabbage.jpg"
                     },
                     {
                         tag: 'figcaption',
@@ -68,7 +70,7 @@ const MenuGen = (() => {
                 children: [
                     {
                         tag: 'img',
-                        src: "menu-cabbagenclams.jpeg"
+                        src: "menu-cabbagenclams.jpg"
                     },
                     {
                         tag: 'figcaption',
@@ -82,7 +84,7 @@ const MenuGen = (() => {
     let gen = domElement(menuTemplate)
     content.append(gen)
 
-})();
+};
 
 export {
     MenuGen

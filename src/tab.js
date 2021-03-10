@@ -1,4 +1,4 @@
-const TabGen = (() => {
+const TabGen = () => {
 
     const content = document.querySelector(".content")
           
@@ -26,7 +26,7 @@ const TabGen = (() => {
         children: [
             {
                 tag: 'div',
-                classes: ['tab-selected'],
+                classes: ['tab', 'tab-selected'],
                 content: `Info`,
             },
             {
@@ -45,7 +45,7 @@ const TabGen = (() => {
     let gen = domElement(tabTemplate)
     content.appendChild(gen)
 
-})();
+};
 
 export {
     TabGen

@@ -1,4 +1,4 @@
-const HeaderGen = (() => {
+const HeaderGen = () => {
 
     const content = document.querySelector(".content")
           
@@ -45,7 +45,7 @@ const HeaderGen = (() => {
     let gen = domElement(headerTemplate)
     content.prepend(gen)
 
-})();
+}
 
 export {
     HeaderGen
