@@ -7,8 +7,8 @@ img.logo {
     height: auto;
 }
 
-img {
-    max-width: 25%;
+img.menu-image {
+    max-width: 50%;
     height: auto;
 }
 
@@ -38,6 +38,12 @@ img {
     flex: 1;
     background-color: #4e453e;
     color: #fff2e8
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
 h1, h2 {
