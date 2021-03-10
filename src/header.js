@@ -13,7 +13,7 @@ const HeaderGen = () => {
           
         }
         if (obj.tag == "img") {
-            domEl.src = "logo";
+            domEl.src = obj.src;
         }
         if (obj.children) for (let child of obj.children) {
             domElement(child)
@@ -30,6 +30,11 @@ const HeaderGen = () => {
             {
                 tag: 'img',
                 src: 'logo',
+                classes: ['logo'],
+            },
+            {
+                tag: 'img',
+                src: 'cabbage-logo.png',
                 classes: ['logo'],
             },
             {
