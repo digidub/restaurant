@@ -1,3 +1,8 @@
+import menucabbage from "./menu-cabbage.jpg";
+import menucabbagenclams from "./menu-cabbagenclams.jpg";
+import menuclams from "./menu-clams.jpeg";
+import menuclamsncabbage from "./menu-clamsncabbage.jpg";
+
 const MenuGen = () => {
 
     const content = document.querySelector(".main")
@@ -40,7 +45,7 @@ const MenuGen = () => {
                             {
                                 tag: 'img',
                                 classes: [`menu-image`],
-                                src: "menu-clams.jpeg"
+                                src: menuclams
                             },
                             {
                                 tag: 'figcaption',
@@ -54,7 +59,7 @@ const MenuGen = () => {
                             {
                                 tag: 'img',
                                 classes: [`menu-image`],
-                                src: "menu-cabbage.jpg"
+                                src: menucabbage
                             },
                             {
                                 tag: 'figcaption',
@@ -68,7 +73,7 @@ const MenuGen = () => {
                             {
                                 tag: 'img',
                                 classes: [`menu-image`],
-                                src: "menu-clamsncabbage.jpg"
+                                src: menuclamsncabbage
                             },
                             {
                                 tag: 'figcaption',
@@ -82,7 +87,7 @@ const MenuGen = () => {
                             {
                                 tag: 'img',
                                 classes: [`menu-image`],
-                                src: "menu-cabbagenclams.jpg"
+                                src: menucabbagenclams
                             },
                             {
                                 tag: 'figcaption',

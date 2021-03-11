@@ -4,12 +4,6 @@ import { TabGen } from "./tab.js"
 import { InfoGen } from "./info.js";
 import { MenuGen } from "./menu.js";
 import { ContactGen } from "./contact.js";
-import logo from "./logo.png";
-import cabbage-logo from "./cabbage-logo.png";
-import menu-cabbage from "./menu-cabbage.png";
-import menu-cabbagenclams from "./menu-cabbagenclams.png";
-import menu-clams from "./menu-clams.png";
-import menu-clamsncabbage from "./menu-clamsncabbage.png";
 
 HeaderGen();
 TabGen();

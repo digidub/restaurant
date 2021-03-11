@@ -1,3 +1,6 @@
+import logo from "./logo.png";
+import cabbagelogo from "./cabbage-logo.png";
+
 const HeaderGen = () => {
 
     const content = document.querySelector(".content")
@@ -29,12 +32,12 @@ const HeaderGen = () => {
         children: [
             {
                 tag: 'img',
-                src: '/src/logo.png',
+                src: logo,
                 classes: ['logo'],
             },
             {
                 tag: 'img',
-                src: '/src/cabbage-logo.png',
+                src: cabbagelogo,
                 classes: ['logo'],
             },
             {
